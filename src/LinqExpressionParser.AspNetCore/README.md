@@ -1,6 +1,6 @@
 # LinqExpressionParser.AspNetCore
 
-**LinqExpressionParser.AspNetCore** is class library project that you can use in your ASP.NET Core app to modelbind and authorize about **ExpressionParseResult**. see [LinqExpressionParser](..\LinqExpressionParser\README.md)
+**LinqExpressionParser.AspNetCore** is class library project that you can use in your ASP.NET Core app to modelbind and authorize about **ExpressionParseResult**. see [LinqExpressionParser](../LinqExpressionParser/README.md)
 
 ## Dependency
 
@@ -37,11 +37,11 @@ public class UserController : Controller
 }
 ```
 
-See [sample](..\LinqExpressionParser.AspNetCore.Sample) for more information
+See [sample](../LinqExpressionParser.AspNetCore.Sample) for more information
 
 ## Configuration
 
-See [LinqExpressionParser](..\LinqExpressionParser.README.md)
+See [LinqExpressionParser](../LinqExpressionParser/README.md)
 
 ### Authorization
 

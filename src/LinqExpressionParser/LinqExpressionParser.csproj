@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <PackageVersion>0.1.0</PackageVersion>
+	<RepositoryUrl>https://github.com/tjtjdnjswhd/LinqExpressionParser</RepositoryUrl>
+	
     <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

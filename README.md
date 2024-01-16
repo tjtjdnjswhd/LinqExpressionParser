@@ -1,5 +1,5 @@
 # LinqExpressionParser
 
-[LinqExpressionParser](src\LinqExpressionParser\README.md)
+[LinqExpressionParser](src/LinqExpressionParser/README.md)
 
-[LinqExpressionParser.AspNetCore](src\LinqExpressionParser.AspNetCore\README.md)
+[LinqExpressionParser.AspNetCore](src/LinqExpressionParser.AspNetCore/README.md)

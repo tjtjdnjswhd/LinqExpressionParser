@@ -93,7 +93,7 @@ SelectorSegment selectorSegment = segmentParser.ParseSelector("IsIdGTFive = Id G
   - A name of operator
   - Add, Subtract, Divide, Multiply: "+", "-", "/", "*"
   - EQ, NQ, GT, GTE, LT, LTE, And, Or
-  - see [EOperator](Segments\Enums\EOperator.cs)
+  - see [EOperator](Segments/Enums/EOperator.cs)
 
 - Parantheses:
   - A value of single segment or operation
@@ -102,7 +102,7 @@ SelectorSegment selectorSegment = segmentParser.ParseSelector("IsIdGTFive = Id G
 - Operation:
   - ex) "123 + 456 - Name.Length"
 
-see [SegmentTest](..\LinqExpressionParser.Tests\Segment\SegmentParserTests.cs) for more sample.
+see [SegmentTest](../LinqExpressionParser.Tests/Segment/SegmentParserTests.cs) for more sample.
 
 ### ExpressionParser
 

@@ -1,0 +1,1 @@
+﻿Param_0 => Param_0.LastLoginAt.AddMinutes(Convert(4, Double))

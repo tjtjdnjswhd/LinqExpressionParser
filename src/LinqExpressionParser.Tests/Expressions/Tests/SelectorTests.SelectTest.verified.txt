@@ -1,0 +1,1 @@
+﻿Param_0 => new {Id = Param_0.Id, NameSubstring = Param_0.Name.Substring(1), SignupAt = Param_0.SignupAt, LastLoginAddDay = Param_0.LastLoginAt.AddDays(Convert(-2.6, Double))}

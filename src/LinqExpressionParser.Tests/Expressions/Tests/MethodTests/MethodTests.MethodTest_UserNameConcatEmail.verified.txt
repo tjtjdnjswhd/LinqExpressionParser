@@ -1,0 +1,1 @@
+﻿Param_0 => Concat(Param_0.Name, Param_0.Email)

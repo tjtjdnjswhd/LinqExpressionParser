@@ -1,0 +1,1 @@
+﻿Param_0 => Param_0.OrderSets.Sum(Param_1 => Param_1.Orders.Average(Param_2 => Param_2.PricePerItem))

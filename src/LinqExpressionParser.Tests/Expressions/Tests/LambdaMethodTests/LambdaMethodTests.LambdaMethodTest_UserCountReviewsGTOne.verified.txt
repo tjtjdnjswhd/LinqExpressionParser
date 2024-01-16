@@ -1,0 +1,1 @@
+﻿Param_0 => Param_0.Reviews.Count(Param_1 => (Param_1.Rating > 1))

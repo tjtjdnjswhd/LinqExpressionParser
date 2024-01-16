@@ -1,0 +1,1 @@
+﻿Param_0 => Compare(Param_0.Name, Param_0.Email)

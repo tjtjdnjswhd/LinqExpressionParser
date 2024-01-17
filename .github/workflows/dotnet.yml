@@ -5,7 +5,7 @@ name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Test-workflow" ]
   pull_request:
     branches: [ "main" ]
 

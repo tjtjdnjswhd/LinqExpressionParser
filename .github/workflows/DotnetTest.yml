@@ -1,11 +1,16 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET
+name: .NET Test
 
 on:
   push:
-    branches: [ "Test-workflow" ]
+    branches:
+      - main
+    paths: 
+      - '**.cs'
+      - '**.csproj'
+      - '**.verified.txt'
     
 jobs:
   build:
@@ -14,8 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Install diffengine
-      run: dotnet tool install -g DiffEngineTray
     - name: Install dependency
       run: dotnet restore src/LinqExpressionParser.Tests
     - name: Build test

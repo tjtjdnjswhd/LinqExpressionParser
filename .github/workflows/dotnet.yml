@@ -10,16 +10,23 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
     strategy:
       matrix:
         dotnet-versions: ['7.x', '8.x']
+        os: ['ubuntu-latest', 'windows-latest']
+    runs-on: ${{ matrix.os }}
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET ${{matrix.dotnet-version}}
+    - name: Setup .NET ${{ matrix.dotnet-version }}
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: ${{matrix.dotnet-version}}
-    - name: Display dotnet version
-      run: dotnet --version
+        dotnet-version: ${{ matrix.dotnet-version }}
+    - name: Install diffengine
+      run: dotnet tool install -g DiffEngineTray
+    - name: Install dependency
+      run: dotnet restore src/LinqExpressionParser.Tests
+    - name: Build test
+      run: dotnet build src/LinqExpressionParser.Tests --no-restore
+    - name: Run test
+      run: dotnet test src/LinqExpressionParser.Tests --no-build --verbosity normal

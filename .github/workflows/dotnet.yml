@@ -10,17 +10,10 @@ on:
 jobs:
   build:
 
-    strategy:
-      matrix:
-        dotnet-versions: ['7.x', '8.x']
     runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET ${{ matrix.dotnet-version }}
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: ${{ matrix.dotnet-version }}
     - name: Install diffengine
       run: dotnet tool install -g DiffEngineTray
     - name: Install dependency

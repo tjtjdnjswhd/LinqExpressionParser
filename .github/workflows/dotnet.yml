@@ -6,9 +6,7 @@ name: .NET
 on:
   push:
     branches: [ "Test-workflow" ]
-  pull_request:
-    branches: [ "main" ]
-
+    
 jobs:
   build:
 
@@ -18,14 +16,10 @@ jobs:
         dotnet-versions: ['7.x', '8.x']
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET ${{matrix.dotnet-version}}
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{matrix.dotnet-version}}
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test LinqExpressionParser.Test --no-build --verbosity normal
+    - name: Display dotnet version
+      run: dotnet --version

@@ -24,8 +24,8 @@ jobs:
       with:
         dotnet-version: ${{matrix.dotnet-version}}
     - name: Restore dependencies
-      run: dotnet restore src
+      run: dotnet restore
     - name: Build
-      run: dotnet build src --no-restore
+      run: dotnet build --no-restore
     - name: Test
-      run: dotnet test src\LinqExpressionParser.Test --no-build --verbosity normal
+      run: dotnet test LinqExpressionParser.Test --no-build --verbosity normal
